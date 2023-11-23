@@ -14,13 +14,13 @@
 
     @vite('resources/css/app.css')
 </head>
-<body>
+<body id="app">
 @include('layouts.client.header')
 
 @yield('content')
 
-<div id="app">
-</div>
+<search></search>
+<cart></cart>
 
 @include('layouts.client.footer')
 </body>

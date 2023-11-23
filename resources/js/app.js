@@ -1,7 +1,15 @@
 import './bootstrap';
 import {createApp} from 'vue';
-import app from './app.vue';
+import search from './client/search.vue';
+import cart from './client/cart.vue';
 
-const App = createApp(app);
+const app = createApp({});
 
-App.mount("#app")
+const components = [
+    search,
+    cart
+];
+
+components.forEach(component => app.component(component.name, component));
+
+app.mount('#app');
