@@ -1,4 +1,7 @@
 <template>
+  <div>
+    master admin
+  </div>
 </template>
 
 <script setup>
